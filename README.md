@@ -1,4 +1,3 @@
-### Hi there 👋
 
 <!--
 **Makireddyvighnesh/Makireddyvighnesh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -15,11 +14,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+### Hi, I'm Vighnesh
 I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and Engineering at IIIT Manipur (2021-2025)
-
-
-### Hi there 👋, Hi, I'm Vighnesh
-#### MERN developer
 
 <h3 align="">Technology & Tools:</h3>
 
