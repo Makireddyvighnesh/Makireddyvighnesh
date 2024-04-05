@@ -21,6 +21,7 @@ I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and
 
 ### Hi there 👋, Hi, I'm Vighnesh
 #### MERN developer
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and Engineering at IIIT Manipur (2021-2025)
 
 Skills: C++/ REACT / JS / HTML / CSS/ PYTHON /EXPRESS.JS / MONGODB/ MYSQL/ NOSE.JS
