@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and Engineering at IIIT Manipur (2021-2025)
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Makireddyvighnesh)](https://github.com/anuraghazra/github-readme-stats)
