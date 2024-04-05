@@ -18,3 +18,15 @@ Here are some ideas to get you started:
 I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and Engineering at IIIT Manipur (2021-2025)
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Makireddyvighnesh)](https://github.com/anuraghazra/github-readme-stats)
+
+### Hi there 👋, Hi, I'm Vighnesh
+#### MERN developer
+I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and Engineering at IIIT Manipur (2021-2025)
+
+Skills: C++/ REACT / JS / HTML / CSS/ PYTHON /EXPRESS.JS / MONGODB/ MYSQL/ NOSE.JS
+
+- 🔭 I’m currently working on this page. 
+
+
+
+
