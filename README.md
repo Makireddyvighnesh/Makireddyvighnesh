@@ -44,7 +44,7 @@ I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and
 <p align="center"><img  src="https://github-readme-streak-stats.herokuapp.com/?user=Makireddyvighnesh&theme=highcontrast" alt="Makireddyvighnesh" width="500px" /></p>
 
 <h3 align="">Connect with me:</h3>
-<a href="https://www.linkedin.com/in/makireddy-vighnesh-324278253/" target="_blank">
+<a href="https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253/" target="_blank">
 <img align="center" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
 alt="navneet-panchayan-189688164" height="40" width="40" style="margin-top: -8px"/></a>
 
