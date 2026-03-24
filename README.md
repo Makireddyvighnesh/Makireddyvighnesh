@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 -->
 
 ### Hi, I'm Vighnesh
-I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and Engineering at IIIT Manipur (2021-2025)
+📚 Expanding my horizons into Machine Learning and AI.
 
 <h3 align="">Technology & Tools:</h3>
 
@@ -48,7 +48,10 @@ I'm Vighnesh a passionate MERN developer, pursuing Btech in Computer Science and
 <img align="center" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
 alt="navneet-panchayan-189688164" height="40" width="40" style="margin-top: -8px"/></a>
 
-
+<!-- <a href="https://x.com/VighneshReddy8" target="_blank">
+<img align="center" src=" 
+alt="navneet-panchayan-189688164" height="40" width="40" style="margin-top: -8px"/></a>
+ -->
 
 
 
