@@ -65,12 +65,13 @@ Automated MCQ generation system using Llama2-7B with constrained outputs and eva
 
 Internship work across fashion and medical imaging pipelines for segmentation, pose estimation, detection, enhancement, and deployment.
 
-- Built a fashion-domain pipeline with U2-Net, P3M-Net, DWPose, MediaPipe, and SMPL.
+- Built a fashion-domain pipeline with U2-Net, P3M-Net, DWPose, and MediaPipe for segmentation and pose estimation.
+- Tested SMPL for 3D body mesh estimation and used the findings to refine the pipeline direction.
 - Improved low-resolution and low-light image quality with LLFormer and KANT.
 - Fine-tuned and quantized ViT for medical image classification with 89% INT8 accuracy.
 - Built Faster R-CNN detection and DeepLabV3 segmentation workflows for medical images.
 
-**Stack:** PyTorch, ViT, Faster R-CNN, DeepLabV3, SMPL, MediaPipe, Gradio
+**Stack:** PyTorch, ViT, Faster R-CNN, DeepLabV3, U2-Net, P3M-Net, MediaPipe, Gradio
 
 ## Technical Stack
 
