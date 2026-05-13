@@ -1,59 +1,85 @@
+# M. Bala Vighnesh Reddy
 
-<!--
-**Makireddyvighnesh/Makireddyvighnesh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+AI/ML engineer interested in **RL for LLMs, robotics, vision models, and efficient models**.
 
-Here are some ideas to get you started:
+I like building systems that connect model behavior with real workflows: reward design for reasoning models, retrieval systems, computer-vision pipelines, quantization, and small-model finetuning.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[LinkedIn](https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253) · [Email](mailto:makireddyvighnesh@gmail.com) · [GitHub](https://github.com/Makireddyvighnesh)
 
-### Hi, I'm Vighnesh
-📚 Expanding my horizons into Machine Learning and AI.
+---
 
-<h3 align="">Technology & Tools:</h3>
+## Current Focus
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)
+- **RL for LLMs:** GRPO, execution-based rewards, reasoning traces, Text-to-SQL evaluation.
+- **Robotics:** language-action models, perception-to-action systems, embodied AI workflows.
+- **Vision models:** segmentation, pose estimation, detection, medical imaging, and 3D-aware pipelines.
+- **Efficient models:** LoRA, QLoRA, INT8 quantization, compact deployment, and inference optimization.
 
-&nbsp;
+## Selected Work
 
+### Text-to-SQL Research
 
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=Makireddyvighnesh&show_icons=true&theme=tokyonight&locale=en" alt="Makireddyvighnesh" width="500px"  /></p>
+Distilled DeepSeek reasoning into Qwen3-4B using LoRA and trained with execution-based reward functions for SQL correctness.
 
-<p align="center"><img  src="https://github-readme-stats.vercel.app/api/top-langs?username=Makireddyvighnesh&show_icons=true&theme=omni&locale=en&layout=compact" alt="Makireddyvighnesh" width="500px" /></p>
+- Generated 9,000+ chain-of-thought SQL examples for Spider and BIRD.
+- Used GRPO reward design to improve performance by 10% over baseline.
+- Reached 86.7% pass@4 on Spider and 70.7% pass@4 on BIRD.
+- Ran efficient training experiments using 4-bit QLoRA.
 
-<p align="center"><img  src="https://github-readme-streak-stats.herokuapp.com/?user=Makireddyvighnesh&theme=highcontrast" alt="Makireddyvighnesh" width="500px" /></p>
+**Stack:** Qwen3-4B, DeepSeek, LoRA, QLoRA, GRPO, Tinker API
 
-<h3 align="">Connect with me:</h3>
-<a href="https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253/" target="_blank">
-<img align="center" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
-alt="navneet-panchayan-189688164" height="40" width="40" style="margin-top: -8px"/></a>
+### [Document Querying System](https://github.com/Makireddyvighnesh/RAG-LLM-Query-Engine)
 
-<!-- <a href="https://x.com/VighneshReddy8" target="_blank">
-<img align="center" src=" 
-alt="navneet-panchayan-189688164" height="40" width="40" style="margin-top: -8px"/></a>
- -->
+RAG application for querying large document collections with indexed retrieval and chat-style interaction.
 
+- Built upload, indexing, and query APIs with Node.js.
+- Used LlamaIndex for retrieval-augmented generation.
+- Added React chat threads, MongoDB storage, authentication, and session management.
 
+**Stack:** LlamaIndex, Node.js, React, MongoDB
 
+### [AutoMCQGen](https://github.com/Makireddyvighnesh/AUtoMcqGen)
 
+Automated MCQ generation system using Llama2-7B with constrained outputs and evaluation.
 
+- Designed preprocessing for long academic documents around the 4,096-token context limit.
+- Used topic-aware chunking and schema-constrained generation.
+- Built an LLM-as-judge evaluation loop with GPT-3.5.
+
+**Stack:** Llama2-7B, LMQL, NLP, GPT-3.5
+
+### Computer Vision Systems
+
+Worked on fashion and medical imaging pipelines across segmentation, pose estimation, detection, enhancement, and deployment.
+
+- Built a fashion-domain pipeline with U2-Net, P3M-Net, DWPose, MediaPipe, and SMPL.
+- Improved low-resolution and low-light image quality with LLFormer and KANT.
+- Fine-tuned and quantized ViT for medical image classification with 89% INT8 accuracy.
+- Built Faster R-CNN detection and DeepLabV3 segmentation workflows for medical images.
+
+**Stack:** PyTorch, ViT, Faster R-CNN, DeepLabV3, SMPL, MediaPipe, Gradio
+
+## Technical Stack
+
+**Languages:** Python, C/C++, JavaScript, HTML, CSS  
+**AI/ML:** PyTorch, HuggingFace, Transformers, UnSloth, LangChain, LlamaIndex, CrewAI, MCP  
+**LLM Systems:** RAG, vector databases, LoRA, QLoRA, Ollama, OpenRouter, Llama, Qwen, DeepSeek  
+**Backend:** FastAPI, Flask, Node.js, Express.js, REST APIs  
+**Frontend:** React, Tailwind CSS, Bootstrap, Gradio  
+**Data/Cloud:** MongoDB, MySQL, GCP
+
+## GitHub Snapshot
+
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=Makireddyvighnesh&show_icons=true&theme=default&hide_border=true" alt="GitHub stats for Makireddyvighnesh" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Makireddyvighnesh&layout=compact&theme=default&hide_border=true" alt="Top languages for Makireddyvighnesh" height="165" />
+</p>
+
+## Open To
+
+Research engineering and applied ML roles around:
+
+- RL for LLMs and reasoning models
+- Robotics and language-action systems
+- Vision models and perception pipelines
+- Efficient finetuning and deployment of compact models
