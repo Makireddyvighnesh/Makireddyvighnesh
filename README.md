@@ -17,6 +17,19 @@ I like building systems that connect model behavior with real workflows: reward 
 
 ## Selected Work
 
+### [ml-model-registry](https://github.com/Makireddyvighnesh/ml-model-registry)
+
+Full-stack Vision AI API platform for image classification, object detection, OCR, and segmentation through developer-friendly REST APIs.
+
+- Migrated the backend from JavaScript to TypeScript for maintainability and type safety.
+- Built a React dashboard for authentication, API key management, billing, usage tracking, model browsing, and live inference testing.
+- Designed JWT authentication for dashboard users and API-key access for programmatic usage.
+- Added MongoDB-backed users, API keys, usage logs, subscriptions, invoice data, and model registry data.
+- Integrated a FastAPI ML inference worker with YOLOv8n, ResNet50, EasyOCR, and YOLOv8n-seg.
+- Added Stripe Checkout support, Docker Compose services, health checks, request IDs, and deployment planning for GCP Cloud Run / Vertex AI.
+
+**Stack:** TypeScript, React, FastAPI, MongoDB, Redis, Docker, Stripe, YOLOv8n, ResNet50, EasyOCR
+
 ### Text-to-SQL Research
 
 Distilled DeepSeek reasoning into Qwen3-4B using LoRA and trained with execution-based reward functions for SQL correctness.
@@ -48,9 +61,9 @@ Automated MCQ generation system using Llama2-7B with constrained outputs and eva
 
 **Stack:** Llama2-7B, LMQL, NLP, GPT-3.5
 
-### Computer Vision Systems
+### Computer Vision Systems Internship
 
-Worked on fashion and medical imaging pipelines across segmentation, pose estimation, detection, enhancement, and deployment.
+Internship work across fashion and medical imaging pipelines for segmentation, pose estimation, detection, enhancement, and deployment.
 
 - Built a fashion-domain pipeline with U2-Net, P3M-Net, DWPose, MediaPipe, and SMPL.
 - Improved low-resolution and low-light image quality with LLFormer and KANT.
