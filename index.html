@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio for M. Bala Vighnesh Reddy, an AI/ML engineer focused on RL for LLMs, RAG systems, small models, and language-action models."
+    />
+    <title>M. Bala Vighnesh Reddy | AI/ML Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="M. Bala Vighnesh Reddy home">
+        <span class="brand-mark">BV</span>
+        <span>Bala Vighnesh</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="model-field" aria-hidden="true"></canvas>
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <p class="eyebrow">AI/ML engineer</p>
+            <h1 id="hero-title">M. Bala Vighnesh Reddy</h1>
+            <p class="hero-text">
+              I want to work on RL for LLMs, robotics, vision models, and efficient AI systems.
+              My work sits around finetuning, reward design, RAG, quantization, and deploying
+              models that are small enough to be useful in real products.
+            </p>
+            <div class="intent-row" aria-label="Current interests">
+              <span>RL for LLMs</span>
+              <span>Robotics</span>
+              <span>Vision models</span>
+              <span>Efficient models</span>
+            </div>
+            <div class="hero-actions" aria-label="Portfolio actions">
+              <a class="button primary" href="#work">View projects</a>
+              <a class="button secondary" href="assets/Bala-Vighnesh-Resume.pdf">Resume</a>
+              <a class="button ghost" href="https://github.com/Makireddyvighnesh">GitHub</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Portfolio highlights">
+            <div class="panel-header">
+              <span>Research interests</span>
+              <strong>Learning systems</strong>
+            </div>
+            <dl class="signal-list">
+              <div>
+                <dt>RL for LLMs</dt>
+                <dd>Execution rewards, GRPO, reasoning traces, evaluation loops</dd>
+              </div>
+              <div>
+                <dt>Robotics + vision</dt>
+                <dd>Perception pipelines, pose, segmentation, action-grounded models</dd>
+              </div>
+              <div>
+                <dt>Efficient models</dt>
+                <dd>LoRA, QLoRA, INT8 quantization, compact deployment</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="metric-strip" aria-label="Selected outcomes">
+        <div>
+          <strong>86.7%</strong>
+          <span>Spider pass@4</span>
+        </div>
+        <div>
+          <strong>70.7%</strong>
+          <span>BIRD pass@4</span>
+        </div>
+        <div>
+          <strong>89%</strong>
+          <span>INT8 ViT accuracy</span>
+        </div>
+        <div>
+          <strong>30%</strong>
+          <span>CV pipeline gain</span>
+        </div>
+      </section>
+
+      <section class="section focus-section" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">Direction</p>
+          <h2 id="focus-title">I am drawn to models that reason, perceive, and act.</h2>
+        </div>
+        <div class="focus-grid">
+          <article>
+            <h3>RL + LLMs</h3>
+            <p>
+              Reward design, execution feedback, and preference-style training for models that
+              need to reason through structured tasks.
+            </p>
+          </article>
+          <article>
+            <h3>Robotics</h3>
+            <p>
+              Learning systems that connect perception, language, planning, and actions in
+              physical or simulated environments.
+            </p>
+          </article>
+          <article>
+            <h3>Vision models</h3>
+            <p>
+              Segmentation, detection, pose estimation, medical imaging, and 3D-aware perception
+              pipelines.
+            </p>
+          </article>
+          <article>
+            <h3>Efficient models</h3>
+            <p>
+              LoRA, QLoRA, quantization, and deployment choices that make capable models easier
+              to run under real constraints.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="work-title">Projects built around model behavior, not just model calls.</h2>
+          </div>
+          <a class="text-link" href="https://github.com/Makireddyvighnesh">All GitHub work</a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-topline">
+              <span>LLM RL</span>
+              <span>Text-to-SQL</span>
+            </div>
+            <h3>Text-to-SQL Research</h3>
+            <p>
+              Distilled DeepSeek reasoning into Qwen3-4B with LoRA, generated 9,000+ chain-of-
+              thought SQL examples, and wrote execution-based GRPO rewards for correctness.
+            </p>
+            <ul class="result-list">
+              <li>Improved baseline performance by 10% in RL experiments.</li>
+              <li>Reached 86.7% pass@4 on Spider and 70.7% pass@4 on BIRD.</li>
+              <li>Ran 4-bit QLoRA experiments on NVIDIA RTX PRO 6000 Blackwell.</li>
+            </ul>
+            <div class="tech-row">
+              <span>Qwen3-4B</span>
+              <span>DeepSeek</span>
+              <span>QLoRA</span>
+              <span>GRPO</span>
+              <span>Tinker API</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Generation</span>
+              <a href="https://github.com/Makireddyvighnesh/AUtoMcqGen">GitHub</a>
+            </div>
+            <h3>AutoMCQGen</h3>
+            <p>
+              Multiple-choice question generator using Llama2-7B and LMQL, with schema-
+              constrained outputs and subject-aware preprocessing for long academic documents.
+            </p>
+            <ul class="result-list">
+              <li>Designed topic-aware chunking around Llama2's 4,096-token limit.</li>
+              <li>Used GPT-3.5 as an LLM judge for correctness and relevance checks.</li>
+              <li>Achieved 87% content alignment with chain-of-thought prompting.</li>
+            </ul>
+            <div class="tech-row">
+              <span>Llama2-7B</span>
+              <span>LMQL</span>
+              <span>NLP</span>
+              <span>GPT-3.5</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>RAG</span>
+              <div class="project-links">
+                <a href="https://github.com/Makireddyvighnesh/RAG-LLM-Query-Engine">GitHub</a>
+                <a href="https://rag-llm-query-engine.vercel.app">Live</a>
+              </div>
+            </div>
+            <h3>Document Querying System</h3>
+            <p>
+              Retrieval-Augmented Generation app for searching and querying large document
+              collections through indexed embeddings and expandable chat threads.
+            </p>
+            <ul class="result-list">
+              <li>Built Node.js APIs for upload, indexing, and query workflows.</li>
+              <li>Integrated LlamaIndex with MongoDB-backed document storage.</li>
+              <li>Added secure authentication and session management.</li>
+            </ul>
+            <div class="tech-row">
+              <span>LlamaIndex</span>
+              <span>Node.js</span>
+              <span>React</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Computer vision</span>
+              <span>Deployment</span>
+            </div>
+            <h3>Fashion Vision Pipeline</h3>
+            <p>
+              Real-time fashion-domain vision pipeline combining segmentation, pose estimation,
+              3D mesh generation, and low-light enhancement behind a Gradio inference surface.
+            </p>
+            <ul class="result-list">
+              <li>Combined U2-Net, P3M-Net, DWPose, MediaPipe, and SMPL.</li>
+              <li>Improved handling of loose-fitting garments and 2-view images.</li>
+              <li>Enhanced low-resolution and low-light images with LLFormer and KANT.</li>
+            </ul>
+            <div class="tech-row">
+              <span>SMPL</span>
+              <span>DWPose</span>
+              <span>MediaPipe</span>
+              <span>Gradio</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Applied AI across vision, medical imaging, and retrieval.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>Aug 2025 - Feb 2026</span>
+              <strong>BigThinx, Bengaluru</strong>
+            </div>
+            <div>
+              <h3>Computer Vision Intern</h3>
+              <p>
+                Built and deployed fashion-domain vision pipelines for segmentation, pose
+                estimation, 3D body meshes, and image enhancement, improving the existing
+                pipeline performance by 30%.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>Jan 2025 - May 2025</span>
+              <strong>IF MedTech, Navi Mumbai</strong>
+            </div>
+            <div>
+              <h3>AI/ML Intern</h3>
+              <p>
+                Fine-tuned and quantized ViT models, built Faster R-CNN and DeepLabV3 medical
+                imaging workflows, and implemented a Llama3-8B RAG app over medical references.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>Nov 2021 - Apr 2025</span>
+              <strong>IIIT Manipur</strong>
+            </div>
+            <div>
+              <h3>B.Tech, Computer Science and Engineering</h3>
+              <p>
+                Built a foundation across systems, software engineering, and applied machine
+                learning, with a growing focus on language models and deployable AI systems.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+        <div class="section-heading">
+          <p class="eyebrow">Stack</p>
+          <h2 id="stack-title">Tools I use to train, ship, and evaluate AI systems.</h2>
+        </div>
+        <div class="stack-grid">
+          <article>
+            <h3>AI / ML</h3>
+            <p>PyTorch, HuggingFace, Transformers, UnSloth, LangChain, LlamaIndex, CrewAI, MCP</p>
+          </article>
+          <article>
+            <h3>LLM Systems</h3>
+            <p>LoRA, QLoRA, RAG, VectorDBs, Ollama, OpenRouter, Llama3, Qwen, DeepSeek</p>
+          </article>
+          <article>
+            <h3>Backend</h3>
+            <p>Python, FastAPI, Flask, Node.js, Express.js, REST APIs, MongoDB, MySQL, GCP</p>
+          </article>
+          <article>
+            <h3>Frontend</h3>
+            <p>React, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Gradio interfaces</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to teams building useful, efficient AI systems.</h2>
+          <p>
+            I am especially interested in RL for LLMs, robotics, vision models, compact model
+            finetuning, and AI systems that can move from experiments into dependable products.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:makireddyvighnesh@gmail.com">Email me</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253">LinkedIn</a>
+          <a class="button ghost" href="https://github.com/Makireddyvighnesh">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>M. Bala Vighnesh Reddy</span>
+      <span>AI/ML portfolio</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
