@@ -1,0 +1,166 @@
+%---------------------------------------------------------
+% M. Bala Vighnesh Reddy - Associate Software Engineer Resume
+%---------------------------------------------------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{newtxtext,newtxmath}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{parskip}
+\usepackage{fontawesome5}
+
+\geometry{left=1.5cm, right=1.5cm, top=1.3cm, bottom=1.3cm}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\definecolor{linkblue}{HTML}{004C99}
+\definecolor{graytext}{HTML}{6D6D6D}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue
+}
+
+\renewcommand{\labelitemi}{\textbullet}
+\setlist[itemize]{leftmargin=7mm, topsep=0pt, itemsep=1pt, parsep=0pt}
+
+\newcommand{\TitleText}[1]{\textbf{\large #1}}
+\newcommand{\BlackBold}[1]{\textbf{#1}}
+\newcommand{\GrayText}[1]{\textcolor{graytext}{\textbf{#1}}}
+
+\newcommand{\SectionHeader}[1]{%
+  \vspace{2mm}%
+  \begin{center}
+    {\large\textbf{\underline{#1}}}%
+  \end{center}
+  \vspace{-2mm}%
+}
+
+\newcommand{\ProjectLine}[4]{%
+  \begin{tabularx}{\textwidth}{@{} X r @{}}
+    {\TitleText{#1}\ \ \GrayText{: #2}} & {\small \href{#4}{\textcolor{linkblue}{#3}}} \\
+  \end{tabularx}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+  {\Large\selectfont\textbf{M. Bala Vighnesh Reddy}}\\[5pt]
+  {\fontsize{11pt}{13pt}\selectfont
+    \faPhone \, +91-9550057396
+    \,|\,
+    \faEnvelope \, \href{mailto:makireddyvighnesh@gmail.com}{\textcolor{linkblue}{makireddyvighnesh@gmail.com}}
+    \,|\,
+    \faLinkedin \, \href{https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253}{\textcolor{linkblue}{LinkedIn}}
+    \,|\,
+    \faGithub \, \href{https://github.com/Makireddyvighnesh}{\textcolor{linkblue}{GitHub}}
+    \,|\,
+    \href{https://makireddyvighnesh.github.io/Makireddyvighnesh/}{\textcolor{linkblue}{Portfolio}}
+  }
+\end{center}
+
+% ---------- SUMMARY ----------
+\SectionHeader{SUMMARY}
+Software engineer with full-stack and AI systems experience building \BlackBold{REST APIs}, \BlackBold{React dashboards}, authentication, database-backed platforms, usage tracking, ML inference services, and \BlackBold{agentic applications using MCP and Groq}. Strong foundation in \BlackBold{TypeScript}, \BlackBold{Node.js}, \BlackBold{Python}, \BlackBold{FastAPI}, \BlackBold{MongoDB}, and Dockerized application development.
+
+% ---------- EDUCATION ----------
+\SectionHeader{EDUCATION}
+\begin{tabularx}{\textwidth}{@{} X r @{}}
+  {\TitleText{Indian Institute of Information Technology, Manipur}} & {\large \textbf{Nov 2021 -- Apr 2025}} \\
+\end{tabularx}
+\textit{Bachelor of Technology in Computer Science and Engineering}
+
+% ---------- WORK EXPERIENCE ----------
+\SectionHeader{WORK EXPERIENCE}
+
+\begin{tabularx}{\textwidth}{@{} X r @{}}
+  {\TitleText{Computer Vision Intern}} & {\large \textbf{Aug 2025 -- Feb 2026}} \\
+\end{tabularx}
+\GrayText{BigThinx, Bengaluru}\\[-3mm]
+{\normalsize
+\begin{itemize}
+  \item Built a computer vision pipeline for fashion-domain image processing by integrating \BlackBold{segmentation}, \BlackBold{pose estimation}, image enhancement, and real-time inference components into an end-to-end workflow.
+  \item Added custom heuristic rules for 2-view images and improved handling of loose-fitting garments where body boundaries are difficult to detect.
+  \item Enhanced low-resolution and low-light image inputs, improving the existing pipeline performance by \BlackBold{30\%}; deployed the system on a virtual machine with a \BlackBold{Gradio} interface for real-time inference.
+\end{itemize}
+}
+
+\vspace{3mm}
+
+\begin{tabularx}{\textwidth}{@{} X r @{}}
+  {\TitleText{AI/ML Intern}} & {\large \textbf{Jan 2025 -- May 2025}} \\
+\end{tabularx}
+\GrayText{IF MedTech, Navi Mumbai}\\[-3mm]
+{\normalsize
+\begin{itemize}
+  \item Fine-tuned a \BlackBold{Vision Transformer (ViT)} on medical imaging data and quantized it to \BlackBold{INT8}, achieving \BlackBold{89\% accuracy} with reduced model size and inference time.
+  \item Built object detection and segmentation workflows using transfer learning and data augmentation to handle limited annotated medical data.
+  \item Implemented a \BlackBold{RAG application} for medical queries using vector embeddings and \BlackBold{Llama3-8B} to generate context-grounded answers from a reference book.
+\end{itemize}
+}
+
+% ---------- PROJECTS ----------
+\SectionHeader{PROJECTS}
+
+\ProjectLine{ml-model-registry}{TypeScript, React, FastAPI, MongoDB, Redis, Docker, Stripe}{GitHub}{https://github.com/Makireddyvighnesh/ml-model-registry}
+{\normalsize
+\begin{itemize}
+  \item Built a full-stack \BlackBold{Vision AI API platform} providing image classification, object detection, OCR, and segmentation through developer-friendly \BlackBold{REST APIs}.
+  \item Migrated the backend from JavaScript to \BlackBold{TypeScript} and developed a responsive \BlackBold{React dashboard} for authentication, API key management, billing, usage tracking, model browsing, and live inference testing.
+  \item Designed secure platform access using \BlackBold{JWT authentication}, programmatic \BlackBold{API keys}, MongoDB-backed usage logs, and plan-based rate limiting.
+  \item Integrated a Python \BlackBold{FastAPI ML inference worker} with lightweight vision models and added \BlackBold{Docker Compose}, Stripe Checkout support, health checks, request IDs, and environment templates.
+\end{itemize}
+}
+
+\vspace{3mm}
+
+\ProjectLine{Document Querying RAG System}{LlamaIndex, Node.js, React, MongoDB}{GitHub}{https://github.com/Makireddyvighnesh/RAG-LLM-Query-Engine}
+{\normalsize
+\begin{itemize}
+  \item Developed a \BlackBold{Retrieval-Augmented Generation} application that lets users upload, index, search, and query document collections with context-grounded responses.
+  \item Created \BlackBold{Node.js REST APIs} for document ingestion, indexing, and querying, backed by \BlackBold{MongoDB} for document and session storage.
+  \item Built a \BlackBold{React.js frontend} with expandable chat threads and implemented secure authentication and session management to protect user data.
+\end{itemize}
+}
+
+\vspace{3mm}
+
+\ProjectLine{Task Management System}{Node.js, React.js, MongoDB, CSS}{GitHub}{https://github.com/Makireddyvighnesh/Task_management_system}
+{\normalsize
+\begin{itemize}
+  \item Built a full-stack task management platform with \BlackBold{Node.js REST APIs} for task creation, editing, priority setting, due dates, and status updates.
+  \item Added secure user authentication, session management, task assignments, threaded comments, and document uploads using \BlackBold{Multer}.
+  \item Designed a responsive \BlackBold{React.js} interface with project sections, filtering by due date and priority, and automated deadline reminders using \BlackBold{Nodemailer}.
+\end{itemize}
+}
+
+% ---------- TECH SKILLS ----------
+\SectionHeader{TECH SKILLS}
+{\normalsize
+\begin{itemize}
+  \item \BlackBold{Languages:} TypeScript, JavaScript, Python, C/C++, HTML, CSS
+  \item \BlackBold{Frontend:} React.js, Tailwind CSS, Bootstrap, responsive UI development
+  \item \BlackBold{Backend:} Node.js, Express.js, FastAPI, Flask, REST APIs, JWT authentication, API keys
+  \item \BlackBold{Databases \& Tools:} MongoDB, MySQL, Redis, Git, GitHub, Docker, Docker Compose, Postman
+  \item \BlackBold{AI/ML:} PyTorch, HuggingFace, Transformers, RAG, LlamaIndex, LangChain, vector databases, model finetuning
+\end{itemize}
+}
+
+% ---------- CERTIFICATIONS ----------
+\SectionHeader{CERTIFICATIONS}
+{\normalsize
+\begin{itemize}
+  \item \href{https://coursera.org/share/66820de848d0b272fa5bef8239e27c54}{\BlackBold{Generative AI with Large Language Models}} -- DeepLearning.AI (2024)
+  \item \href{https://coursera.org/share/f7c868b141a2761a5a0d7bc1da42d67d}{\BlackBold{Neural Networks and Deep Learning}} -- DeepLearning.AI / Coursera (2024)
+\end{itemize}
+}
+
+\end{document}
