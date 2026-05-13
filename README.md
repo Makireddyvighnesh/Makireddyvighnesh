@@ -68,12 +68,11 @@ Worked on fashion and medical imaging pipelines across segmentation, pose estima
 **Frontend:** React, Tailwind CSS, Bootstrap, Gradio  
 **Data/Cloud:** MongoDB, MySQL, GCP
 
-## GitHub Snapshot
+## Profile Snapshot
 
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=Makireddyvighnesh&show_icons=true&theme=default&hide_border=true" alt="GitHub stats for Makireddyvighnesh" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Makireddyvighnesh&layout=compact&theme=default&hide_border=true" alt="Top languages for Makireddyvighnesh" height="165" />
-</p>
+- Building toward research engineering work in RL, LLM systems, robotics, and vision.
+- Comfortable moving between model training, backend APIs, retrieval systems, and simple product interfaces.
+- Strongest current themes: reward design, compact finetuning, RAG, medical/fashion vision pipelines, and model deployment.
 
 ## Open To
 
