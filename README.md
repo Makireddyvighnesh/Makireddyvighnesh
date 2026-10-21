@@ -1,98 +1,43 @@
-# M. Bala Vighnesh Reddy
+### Hello, I'm Bala
 
-AI/ML engineer interested in **RL for LLMs, robotics, vision models, and efficient models**.
+ML engineer at Aiverbalyze, where I train and evaluate speech recognition models and build real-time voice agents.
 
-I like building systems that connect model behavior with real workflows: reward design for reasoning models, retrieval systems, computer-vision pipelines, quantization, and small-model finetuning.
+Outside work, I go deep on LLMs: post-training them with reinforcement learning, building the environments they learn in, and understanding how inference really works by building it myself.
 
-[LinkedIn](https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253) · [Email](mailto:makireddyvighnesh@gmail.com) · [GitHub](https://github.com/Makireddyvighnesh)
+[website](https://makireddyvighnesh.github.io/) · [hugging face](https://huggingface.co/makireddyvighnesh) · [linkedin](https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253) · [email](mailto:makireddyvighnesh@gmail.com)
 
----
+<br>
 
-## Current Focus
+#### Projects
 
-- **RL for LLMs:** GRPO, execution-based rewards, reasoning traces, Text-to-SQL evaluation.
-- **Robotics:** language-action models, perception-to-action systems, embodied AI workflows.
-- **Vision models:** segmentation, pose estimation, detection, medical imaging, and 3D-aware pipelines.
-- **Efficient models:** LoRA, QLoRA, INT8 quantization, compact deployment, and inference optimization.
+**[Mini LLM inference engine](https://github.com/Makireddyvighnesh/mini-inference-engine)**  
+Serving Qwen3-4B on one L4 GPU, built up one bottleneck at a time: KV cache, continuous batching, paged KV with Triton kernels, CUDA Graphs, prefix caching. 370 tok/s at batch 16, against 229 for Hugging Face `generate()`.
 
-## Selected Work
+**[Telugu RL environments + GRPO](https://github.com/Makireddyvighnesh/telugu-rl-envs)** · [model](https://huggingface.co/makireddyvighnesh/Qwen2.5-1.5B-Instruct-telugu-translit-grpo)  
+RL environments for Telugu transliteration, OCR, ASR and translation, built on OpenEnv. GRPO through my own environment took a 1.5B model from 4.6% to 29.1% exact match.
 
-### [ml-model-registry](https://github.com/Makireddyvighnesh/ml-model-registry)
+**Text-to-SQL with SFT + GRPO**  
+Qwen3-4B trained with a reward that executes each query: 86.7% pass@4 on Spider, 70.7% on BIRD.
 
-Full-stack Vision AI API platform for image classification, object detection, OCR, and segmentation through developer-friendly REST APIs.
+<br>
 
-- Migrated the backend from JavaScript to TypeScript for maintainability and type safety.
-- Built a React dashboard for authentication, API key management, billing, usage tracking, model browsing, and live inference testing.
-- Designed JWT authentication for dashboard users and API-key access for programmatic usage.
-- Added MongoDB-backed users, API keys, usage logs, subscriptions, invoice data, and model registry data.
-- Integrated a FastAPI ML inference worker with YOLOv8n, ResNet50, EasyOCR, and YOLOv8n-seg.
-- Added Stripe Checkout support, Docker Compose services, health checks, request IDs, and deployment planning for GCP Cloud Run / Vertex AI.
+#### Work
 
-**Stack:** TypeScript, React, FastAPI, MongoDB, Redis, Docker, Stripe, YOLOv8n, ResNet50, EasyOCR
+**ML Engineer, Aiverbalyze** · 2026–now  
+Speech recognition for 12 Indic languages, and a voice-to-voice pipeline that answers in under ~1.2 s at p95.
 
-### Text-to-SQL Research
+**Computer Vision Intern, BigThinx** · 2025–26  
+Body segmentation and pose from two photos, for fashion.
 
-Distilled DeepSeek reasoning into Qwen3-4B using LoRA and trained with execution-based reward functions for SQL correctness.
+**AI/ML Intern, IF MedTech** · 2025  
+Medical imaging models on small datasets.
 
-- Generated 9,000+ chain-of-thought SQL examples for Spider and BIRD.
-- Used GRPO reward design to improve performance by 10% over baseline.
-- Reached 86.7% pass@4 on Spider and 70.7% pass@4 on BIRD.
-- Ran efficient training experiments using 4-bit QLoRA.
+<br>
 
-**Stack:** Qwen3-4B, DeepSeek, LoRA, QLoRA, GRPO, Tinker API
+#### Writing
 
-### [Document Querying System](https://github.com/Makireddyvighnesh/RAG-LLM-Query-Engine)
+[What I learned building an LLM inference engine](https://makireddyvighnesh.github.io/posts/inference-engine.html) · Oct 2026
 
-RAG application for querying large document collections with indexed retrieval and chat-style interaction.
+<br>
 
-- Built upload, indexing, and query APIs with Node.js.
-- Used LlamaIndex for retrieval-augmented generation.
-- Added React chat threads, MongoDB storage, authentication, and session management.
-
-**Stack:** LlamaIndex, Node.js, React, MongoDB
-
-### [AutoMCQGen](https://github.com/Makireddyvighnesh/AUtoMcqGen)
-
-Automated MCQ generation system using Llama2-7B with constrained outputs and evaluation.
-
-- Designed preprocessing for long academic documents around the 4,096-token context limit.
-- Used topic-aware chunking and schema-constrained generation.
-- Built an LLM-as-judge evaluation loop with GPT-3.5.
-
-**Stack:** Llama2-7B, LMQL, NLP, GPT-3.5
-
-### Computer Vision Systems Internship
-
-Internship work across fashion and medical imaging pipelines for segmentation, pose estimation, detection, enhancement, and deployment.
-
-- Built a fashion-domain pipeline with U2-Net, P3M-Net, DWPose, and MediaPipe for segmentation and pose estimation.
-- Tested SMPL for 3D body mesh estimation and used the findings to refine the pipeline direction.
-- Improved low-resolution and low-light image quality with LLFormer and KANT.
-- Fine-tuned and quantized ViT for medical image classification with 89% INT8 accuracy.
-- Built Faster R-CNN detection and DeepLabV3 segmentation workflows for medical images.
-
-**Stack:** PyTorch, ViT, Faster R-CNN, DeepLabV3, U2-Net, P3M-Net, MediaPipe, Gradio
-
-## Technical Stack
-
-**Languages:** Python, C/C++, JavaScript, HTML, CSS  
-**AI/ML:** PyTorch, HuggingFace, Transformers, UnSloth, LangChain, LlamaIndex, CrewAI, MCP  
-**LLM Systems:** RAG, vector databases, LoRA, QLoRA, Ollama, OpenRouter, Llama, Qwen, DeepSeek  
-**Backend:** FastAPI, Flask, Node.js, Express.js, REST APIs  
-**Frontend:** React, Tailwind CSS, Bootstrap, Gradio  
-**Data/Cloud:** MongoDB, MySQL, GCP
-
-## Profile Snapshot
-
-- Building toward research engineering work in RL, LLM systems, robotics, and vision.
-- Comfortable moving between model training, backend APIs, retrieval systems, and simple product interfaces.
-- Strongest current themes: reward design, compact finetuning, RAG, medical/fashion vision pipelines, and model deployment.
-
-## Open To
-
-Research engineering and applied ML roles around:
-
-- RL for LLMs and reasoning models
-- Robotics and language-action systems
-- Vision models and perception pipelines
-- Efficient finetuning and deployment of compact models
+<sub>Always happy to talk about RL, inference or speech. [Say hi](mailto:makireddyvighnesh@gmail.com).</sub>
