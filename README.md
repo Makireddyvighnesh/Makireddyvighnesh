@@ -1,98 +1,46 @@
-# M. Bala Vighnesh Reddy
+<h1 align="center">Bala Vighnesh Reddy</h1>
 
-AI/ML engineer interested in **RL for LLMs, robotics, vision models, and efficient models**.
+<p align="center">
+  ML Engineer at Aiverbalyze &nbsp;·&nbsp; LLM inference &nbsp;·&nbsp; RL post-training &nbsp;·&nbsp; Speech
+</p>
 
-I like building systems that connect model behavior with real workflows: reward design for reasoning models, retrieval systems, computer-vision pipelines, quantization, and small-model finetuning.
+<p align="center">
+  <a href="https://makireddyvighnesh.github.io/"><img src="https://img.shields.io/badge/Website-111111?style=flat-square&logo=googlechrome&logoColor=white" alt="Website"></a>
+  <a href="https://huggingface.co/makireddyvighnesh"><img src="https://img.shields.io/badge/Hugging_Face-111111?style=flat-square&logo=huggingface&logoColor=FFD21E" alt="Hugging Face"></a>
+  <a href="https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253"><img src="https://img.shields.io/badge/LinkedIn-111111?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://makireddyvighnesh.github.io/resume.pdf"><img src="https://img.shields.io/badge/Resume-111111?style=flat-square&logo=readthedocs&logoColor=white" alt="Resume"></a>
+  <a href="mailto:makireddyvighnesh@gmail.com"><img src="https://img.shields.io/badge/Email-111111?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
-[LinkedIn](https://www.linkedin.com/in/makireddy-bala-vighnesh-324278253) · [Email](mailto:makireddyvighnesh@gmail.com) · [GitHub](https://github.com/Makireddyvighnesh)
+<br>
 
----
+I train and evaluate speech recognition models and build real-time voice agents at Aiverbalyze. Outside work, I go deep on LLMs: post-training them with reinforcement learning, building the environments they learn in, and understanding how inference really works by building it myself.
 
-## Current Focus
+### Featured projects
 
-- **RL for LLMs:** GRPO, execution-based rewards, reasoning traces, Text-to-SQL evaluation.
-- **Robotics:** language-action models, perception-to-action systems, embodied AI workflows.
-- **Vision models:** segmentation, pose estimation, detection, medical imaging, and 3D-aware pipelines.
-- **Efficient models:** LoRA, QLoRA, INT8 quantization, compact deployment, and inference optimization.
+| Project | What it is | Result |
+| :-- | :-- | :-- |
+| **[mini-inference-engine](https://github.com/Makireddyvighnesh/mini-inference-engine)** | An LLM serving engine built from a plain decode loop upward: KV cache, continuous batching, paged KV with Triton kernels, CUDA Graphs, prefix caching. Qwen3-4B on one L4 GPU. | 370 tok/s at batch 16, vs 229 for HF `generate()` |
+| **[telugu-rl-envs](https://github.com/Makireddyvighnesh/telugu-rl-envs)** | RL environments for Telugu transliteration, OCR, ASR and translation on OpenEnv, with reward-hacking guards. GRPO-trained [model on Hugging Face](https://huggingface.co/makireddyvighnesh/Qwen2.5-1.5B-Instruct-telugu-translit-grpo). | Exact match 4.6% → 29.1% on a 1.5B model |
+| **Text-to-SQL with SFT + GRPO** | Qwen3-4B fine-tuned on 9,000+ chain-of-thought SQL examples, then trained with a reward that executes each query. | 86.7% pass@4 on Spider, 70.7% on BIRD |
 
-## Selected Work
+### Experience
 
-### [ml-model-registry](https://github.com/Makireddyvighnesh/ml-model-registry)
+| Role | Company | Focus | When |
+| :-- | :-- | :-- | :-- |
+| ML Engineer | Aiverbalyze | ASR for 12 Indic languages; voice-to-voice pipeline under ~1.2 s at p95 | 2026 – now |
+| Computer Vision Intern | BigThinx | Body segmentation and pose from two photos, for fashion | 2025 – 26 |
+| AI/ML Intern | IF MedTech | Medical imaging models on small datasets | 2025 |
 
-Full-stack Vision AI API platform for image classification, object detection, OCR, and segmentation through developer-friendly REST APIs.
+### Tools I use
 
-- Migrated the backend from JavaScript to TypeScript for maintainability and type safety.
-- Built a React dashboard for authentication, API key management, billing, usage tracking, model browsing, and live inference testing.
-- Designed JWT authentication for dashboard users and API-key access for programmatic usage.
-- Added MongoDB-backed users, API keys, usage logs, subscriptions, invoice data, and model registry data.
-- Integrated a FastAPI ML inference worker with YOLOv8n, ResNet50, EasyOCR, and YOLOv8n-seg.
-- Added Stripe Checkout support, Docker Compose services, health checks, request IDs, and deployment planning for GCP Cloud Run / Vertex AI.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![Triton](https://img.shields.io/badge/Triton-222222?style=flat-square)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
-**Stack:** TypeScript, React, FastAPI, MongoDB, Redis, Docker, Stripe, YOLOv8n, ResNet50, EasyOCR
+<br>
 
-### Text-to-SQL Research
-
-Distilled DeepSeek reasoning into Qwen3-4B using LoRA and trained with execution-based reward functions for SQL correctness.
-
-- Generated 9,000+ chain-of-thought SQL examples for Spider and BIRD.
-- Used GRPO reward design to improve performance by 10% over baseline.
-- Reached 86.7% pass@4 on Spider and 70.7% pass@4 on BIRD.
-- Ran efficient training experiments using 4-bit QLoRA.
-
-**Stack:** Qwen3-4B, DeepSeek, LoRA, QLoRA, GRPO, Tinker API
-
-### [Document Querying System](https://github.com/Makireddyvighnesh/RAG-LLM-Query-Engine)
-
-RAG application for querying large document collections with indexed retrieval and chat-style interaction.
-
-- Built upload, indexing, and query APIs with Node.js.
-- Used LlamaIndex for retrieval-augmented generation.
-- Added React chat threads, MongoDB storage, authentication, and session management.
-
-**Stack:** LlamaIndex, Node.js, React, MongoDB
-
-### [AutoMCQGen](https://github.com/Makireddyvighnesh/AUtoMcqGen)
-
-Automated MCQ generation system using Llama2-7B with constrained outputs and evaluation.
-
-- Designed preprocessing for long academic documents around the 4,096-token context limit.
-- Used topic-aware chunking and schema-constrained generation.
-- Built an LLM-as-judge evaluation loop with GPT-3.5.
-
-**Stack:** Llama2-7B, LMQL, NLP, GPT-3.5
-
-### Computer Vision Systems Internship
-
-Internship work across fashion and medical imaging pipelines for segmentation, pose estimation, detection, enhancement, and deployment.
-
-- Built a fashion-domain pipeline with U2-Net, P3M-Net, DWPose, and MediaPipe for segmentation and pose estimation.
-- Tested SMPL for 3D body mesh estimation and used the findings to refine the pipeline direction.
-- Improved low-resolution and low-light image quality with LLFormer and KANT.
-- Fine-tuned and quantized ViT for medical image classification with 89% INT8 accuracy.
-- Built Faster R-CNN detection and DeepLabV3 segmentation workflows for medical images.
-
-**Stack:** PyTorch, ViT, Faster R-CNN, DeepLabV3, U2-Net, P3M-Net, MediaPipe, Gradio
-
-## Technical Stack
-
-**Languages:** Python, C/C++, JavaScript, HTML, CSS  
-**AI/ML:** PyTorch, HuggingFace, Transformers, UnSloth, LangChain, LlamaIndex, CrewAI, MCP  
-**LLM Systems:** RAG, vector databases, LoRA, QLoRA, Ollama, OpenRouter, Llama, Qwen, DeepSeek  
-**Backend:** FastAPI, Flask, Node.js, Express.js, REST APIs  
-**Frontend:** React, Tailwind CSS, Bootstrap, Gradio  
-**Data/Cloud:** MongoDB, MySQL, GCP
-
-## Profile Snapshot
-
-- Building toward research engineering work in RL, LLM systems, robotics, and vision.
-- Comfortable moving between model training, backend APIs, retrieval systems, and simple product interfaces.
-- Strongest current themes: reward design, compact finetuning, RAG, medical/fashion vision pipelines, and model deployment.
-
-## Open To
-
-Research engineering and applied ML roles around:
-
-- RL for LLMs and reasoning models
-- Robotics and language-action systems
-- Vision models and perception pipelines
-- Efficient finetuning and deployment of compact models
+<p align="center"><sub>Always happy to talk about RL, inference or speech. <a href="mailto:makireddyvighnesh@gmail.com">Say hi</a>.</sub></p>
