@@ -32,10 +32,6 @@ I train and evaluate speech recognition models and build real-time voice agents 
 | Computer Vision Intern | BigThinx | Body segmentation and pose from two photos, for fashion | 2025 – 26 |
 | AI/ML Intern | IF MedTech | Medical imaging models on small datasets | 2025 |
 
-### Writing
-
-- [What I learned building an LLM inference engine](https://makireddyvighnesh.github.io/posts/inference-engine.html): six techniques, one L4 GPU, and the bottleneck each one actually removes. *Oct 2026*
-
 ### Tools I use
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
