@@ -24,14 +24,6 @@ I train and evaluate speech recognition models and build real-time voice agents 
 | **[telugu-rl-envs](https://github.com/Makireddyvighnesh/telugu-rl-envs)** | RL environments for Telugu transliteration, OCR, ASR and translation on OpenEnv, with reward-hacking guards. GRPO-trained [model on Hugging Face](https://huggingface.co/makireddyvighnesh/Qwen2.5-1.5B-Instruct-telugu-translit-grpo). | Exact match 4.6% → 29.1% on a 1.5B model |
 | **Text-to-SQL with SFT + GRPO** | Qwen3-4B fine-tuned on 9,000+ chain-of-thought SQL examples, then trained with a reward that executes each query. | 86.7% pass@4 on Spider, 70.7% on BIRD |
 
-### Experience
-
-| Role | Company | Focus | When |
-| :-- | :-- | :-- | :-- |
-| ML Engineer | Aiverbalyze | ASR for 12 Indic languages; voice-to-voice pipeline under ~1.2 s at p95 | 2026 – now |
-| Computer Vision Intern | BigThinx | Body segmentation and pose from two photos, for fashion | 2025 – 26 |
-| AI/ML Intern | IF MedTech | Medical imaging models on small datasets | 2025 |
-
 ### Tools I use
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
